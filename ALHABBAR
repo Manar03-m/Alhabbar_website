@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>مكتبة الحبّار – طلب خدمة</title>
+  <style>
+    body { font-family: 'Arial', sans-serif; background: #f7f9fc; margin: 0; padding: 0; }
+    header { background: #004080; color: white; text-align: center; padding: 20px; }
+    nav ul { list-style: none; display: flex; justify-content: center; padding: 0; background: #003060; margin: 0; flex-wrap: wrap; }
+    nav ul li { margin: 0 15px; }
+    nav ul li a { color: white; text-decoration: none; padding: 14px; display: block; }
+    nav ul li a:hover { background: #0050a0; }
+    section { padding: 40px 20px; max-width: 1100px; margin: auto; }
+    h2, h3 { color: #004080; }
+    footer { background: #002040; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    form { background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-top: 20px; }
+    label { display: block; margin: 10px 0 5px; font-weight: bold; }
+    input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="date"], select, textarea {
+      width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; box-sizing: border-box; }
+    textarea { resize: vertical; }
+    .inline-group { display: flex; gap: 10px; flex-wrap: wrap; }
+    .inline-group > * { flex: 1; min-width: 180px; }
+    .checkbox-row, .radio-row { display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 15px; }
+    .checkbox-row label, .radio-row label { font-weight: normal; display: flex; align-items: center; gap: 5px; }
+    button, .whatsapp-button {
+      background: #004080; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin: 10px 10px 0 0; display: inline-block; text-decoration: none;
+    }
+    button:hover, .whatsapp-button:hover { background: #0050a0; }
+    @media(max-width:600px){ .inline-group{flex-direction:column;} }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>مكتبة الحبّار</h1>
+  <p>دعم أكاديمي وهندسي متكامل للباحثين والطلبة</p>
+</header>
+
+<section id="welcome" style="background-color: #eaf1fc; padding: 40px 20px; text-align: center;">
+  <h2 style="color: #004080;">مرحبًا بكم في مكتبة الحبّار</h2>
+  <p style="font-size: 1.15em; line-height: 1.8;">
+    نحن هنا لنكون شركاءكم في النجاح الأكاديمي والهندسي. نساعدكم بخبرتنا في إعداد الأبحاث، تقديم الدعم الإحصائي، وإنجاز المشاريع الفنية والهندسية باحتراف.
+  </p>
+</section>
+
+<nav>
+  <ul>
+    <li><a href="#about">من نحن</a></li>
+    <li><a href="#services">خدماتنا</a></li>
+    <li><a href="#request">طلب خدمة</a></li>
+    <li><a href="#guidance">جلسات إرشادية</a></li>
+    <li><a href="#contact">تواصل معنا</a></li>
+  </ul>
+</nav>
+
+<section id="about" style="background-color: #f7f9fc; padding: 40px 20px;">
+  <h2 style="color: #004080;">من نحن:</h2>
+  <p style="font-size: 1.1em; line-height: 1.8;">
+    نحن فريق متخصص في الدعم الأكاديمي والهندسي، نقدّم خدمات احترافية ومتكاملة لكل من يحتاجها – سواء طلاب، باحثين، مهنيين أو حتى أفراد لديهم مشاريع خاصة أو أفكار مميزة.
+  </p>
+  <p style="font-size: 1.1em; line-height: 1.8;">
+    نقدّم خدمات شاملة في إعداد الأبحاث، التصميم الهندسي، الدعم الأكاديمي، والتحليل الإحصائي.
+  </p>
+</section>
+
+<section id="services">
+  <h2>خدماتنا</h2>
+  <ul style="line-height: 2; font-size: 1.1em; padding-right: 20px;">
+    <li><strong>تنسيق رسائل الماجستير والدكتوراه:</strong> إعداد، تنسيق، تدقيق، واقتراح عناوين.</li>
+    <li><strong>التحليل والإحصائيات:</strong> باستخدام SPSS، Python، MATLAB، وغيرها.</li>
+    <li><strong>إعداد عروض تقديمية احترافية:</strong> باستخدام PowerPoint، Prezi، Canva، إلخ.</li>
+    <li><strong>التدريب والدعم الأكاديمي:</strong> مساعدات في خطة البحث والتنفيذ.</li>
+    <li><strong>تصميم المشاريع الهندسية:</strong> باستخدام AutoCAD، SolidWorks، Ansys.</li>
+    <li><strong>حل المشاكل الهندسية والمعادلات:</strong> دعم رياضي وهندسي معمّق.</li>
+    <li><strong>تحليل ومحاكاة الأنظمة الكهربائية:</strong> باستخدام MATLAB/Simulink، ETAP، PSSE.</li>
+    <li><strong>تصميم أنظمة الطاقة الشمسية:</strong> باستخدام AutoCAD، SketchUp، PVsyst.</li>
+    <li><strong>إعداد المخططات الكهربائية:</strong> تنفيذية SLD.</li>
+    <li><strong>كتابة الأبحاث الأكاديمية:</strong> باللغة الإنجليزية والعربية وباحتراف.</li>
+    <li><strong>مراجعة الأدبيات وتحليل النتائج:</strong> مع صياغة التوصيات.</li>
+    <li><strong>الترجمة</strong></li>
+
+  </ul>
+</section>
+
+<section id="request">
+  <h2>طلب خدمة</h2>
+
+  <div class="radio-row">
+    <label><input type="radio" name="serviceType" value="academic" checked> خدمة بحثية / أكاديمية</label>
+    <label><input type="radio" name="serviceType" value="other"> خدمة غير بحثية</label>
+    <label><input type="radio" name="serviceType" value="translation"> خدمة ترجمة</label>
+  </div>
+
+  <p style="color:#004080; font-size:0.95em; margin-top:0;">🔔 <em>يرجى إرسال الملفات المطلوبة مباشرة عبر واتساب بعد الضغط على الزر أدناه.</em></p>
+
+  <!-- نموذج الخدمة البحثية -->
+  <form id="academicForm" action="https://formspree.io/f/xjkraerk" method="POST" enctype="multipart/form-data">
+    <h3>المعلومات الشخصية</h3>
+    <label for="fullName">الاسم الكامل *</label>
+    <input type="text" id="fullName" name="الاسم الكامل" required>
+
+    <div class="inline-group">
+      <div>
+        <label for="email">البريد الإلكتروني</label>
+        <input type="email" id="email" name="البريد الإلكتروني">
+      </div>
+      <div>
+        <label for="phone">رقم الهاتف</label>
+        <input type="tel" id="phone" name="رقم الهاتف">
+      </div>
+    </div>
+
+    <div class="inline-group">
+      <div>
+        <label for="university">اسم الجامعة والقسم</label>
+        <input type="text" id="university" name="اسم الجامعة والقسم">
+      </div>
+      <div>
+        <label for="studyLevel">المرحلة الدراسية</label>
+        <select id="studyLevel" name="المرحلة الدراسية">
+          <option value="دبلوم">دبلوم</option>
+          <option value="بكالوريوس">بكالوريوس</option>
+          <option value="ماجستير">ماجستير</option>
+          <option value="دكتوراه">دكتوراه</option>
+        </select>
+      </div>
+    </div>
+
+    <h3>معلومات البحث أو المشروع</h3>
+    <label for="title">عنوان البحث / المشروع</label>
+    <input type="text" id="title" name="عنوان البحث">
+
+    <div class="inline-group">
+      <div>
+        <label for="broadField">التخصص العام</label>
+        <input type="text" id="broadField" name="التخصص العام">
+      </div>
+      <div>
+        <label for="narrowField">التخصص الدقيق</label>
+        <input type="text" id="narrowField" name="التخصص الدقيق">
+      </div>
+    </div>
+
+    <label>نوع الخدمة المطلوبة</label>
+    <div class="checkbox-row">
+      <label><input type="checkbox" name="نوع الخدمة[]" value="بحث أكاديمي"> بحث أكاديمي</label>
+      <label><input type="checkbox" name="نوع الخدمة[]" value="رسالة ماجستير"> رسالة ماجستير</label>
+      <label><input type="checkbox" name="نوع الخدمة[]" value="أخرى"> أخرى</label>
+    </div>
+
+    <label>نوع الخدمة المطلوبة</label>
+  <div class="checkbox-row">
+  <label><input type="checkbox" name="نوع الخدمة[]" value="بحث أكاديمي">(رسالة ماجستير - أطروحة دكتوراه - بحث ترقية) بحث أكاديمي</label>
+  <label><input type="checkbox" name="نوع الخدمة[]" value="بحث مادة"> بحث مادة</label>
+  <label><input type="checkbox" name="نوع الخدمة[]" value="بحث تأملي"> بحث تأملي</label>
+  <label><input type="checkbox" name="نوع الخدمة[]" value="خطة بحث (Proposal)"> خطة بحث (Proposal)</label>
+  <label><input type="checkbox" name="نوع الخدمة[]" value="تلخيص كتب أو مقالات"> تلخيص كتب أو مقالات</label>
+  <label><input type="checkbox" name="نوع الخدمة[]" value="عرض بوربوينت"> عرض بوربوينت</label>
+  <label><input type="checkbox" name="نوع الخدمة[]" value="مراجعة لغوية وتنسيق"> مراجعة لغوية وتنسيق</label>
+  <label><input type="checkbox" name="نوع الخدمة[]" value="ترجمة أكاديمية أو قانونية"> ترجمة أكاديمية أو قانونية</label>
+  <label><input type="checkbox" name="نوع الخدمة[]" value="مشروع تخرج"> مشروع تخرج</label>
+  <label><input type="checkbox" name="نوع الخدمة[]" value="واجب (Assignment)"> واجب (Assignment)</label>
+  <label><input type="checkbox" name="نوع الخدمة[]" value="أخرى"> أخرى</label>
+  </div>
+
+
+   <label for="citationStyle">نظام التوثيق المطلوب</label>
+<select id="citationStyle" name="نظام التوثيق المطلوب">
+  <option value="APA">APA</option>
+  <option value="MLA">MLA</option>
+  <option value="شيكاغو">شيكاغو</option>
+  <option value="هارفارد">هارفارد</option>
+  <option value="غير محدد">غير محدد</option>
+</select>
+<label>2. المراجع أو المصادر المطلوبة:</label>
+<div class="checkbox-row">
+  <label><input type="checkbox" name="نوع المرجع[]" value="أحدث المراجع (آخر 5 سنوات)"> أحدث المراجع (آخر 5 سنوات)</label>
+  <label><input type="checkbox" name="نوع المرجع[]" value="مراجع عربية"> مراجع عربية</label>
+  <label><input type="checkbox" name="نوع المرجع[]" value="مراجع أجنبية"> مراجع أجنبية</label>
+</div>
+
+<label for="specificSources">مراجع محددة (اذكرها)</label>
+<textarea id="specificSources" name="مراجع محددة" rows="3" placeholder="اكتب أسماء المراجع أو الروابط إن وجدت"></textarea>
+
+
+      <label for="language">لغة الكتابة</label>
+<select id="language" name="لغة الكتابة" onchange="toggleOtherLanguage(this)">
+  <option value="العربية">العربية</option>
+  <option value="الإنجليزية">الإنجليزية</option>
+  <option value="أخرى">أخرى</option>
+</select>
+
+<input type="text" id="otherLanguageInput" name="لغة أخرى" placeholder="يرجى تحديد اللغة" style="display: none; margin-top: 10px;" />
+<script>
+  function toggleOtherLanguage(selectElement) {
+    const otherInput = document.getElementById('otherLanguageInput');
+    if (selectElement.value === 'أخرى') {
+      otherInput.style.display = 'block';
+    } else {
+      otherInput.style.display = 'none';
+      otherInput.value = '';
+    }
+  }
+</script>
+
+
+    <div class="inline-group">
+  <div>
+    <label for="pages">عدد الصفحات</label>
+    <input type="number" id="pages" name="عدد الصفحات" min="1">
+  </div>
+  <div>
+    <label for="wordCount">عدد الكلمات</label>
+    <input type="number" id="wordCount" name="عدد الكلمات" min="1">
+  </div>
+</div>
+
+      <div>
+        <label for="deadline">تاريخ التسليم المطلوب *</label>
+        <input type="date" id="deadline" name="تاريخ التسليم" required>
+      </div>
+    </div>
+    <div>
+  <label>هل هناك مواعيد تسليم جزئي أو مراجعة؟</label>
+  <div class="radio-row">
+    <label><input type="radio" name="تسليم جزئي" value="نعم" onchange="togglePartialDelivery(true)"> نعم</label>
+    <label><input type="radio" name="تسليم جزئي" value="لا" onchange="togglePartialDelivery(false)" checked> لا</label>
+  </div>
+  <div id="partialDeliveryDates" style="display: none;">
+    <label for="partialDates">يرجى تحديد مواعيد التسليم الجزئي أو المراجعات:</label>
+    <textarea id="partialDates" name="مواعيد تسليم جزئي" rows="3" placeholder="مثال: تسليم الفصل الأول بتاريخ 01-08-2025"></textarea>
+  </div>
+</div>
+<script>
+  function togglePartialDelivery(show) {
+    const field = document.getElementById('partialDeliveryDates');
+    field.style.display = show ? 'block' : 'none';
+    if (!show) {
+      document.getElementById('partialDates').value = '';
+    }
+  }
+</script>
+
+
+    <label for="extraDetails">تفاصيل إضافية</label>
+<textarea id="extraDetails" name="تفاصيل إضافية" rows="6" placeholder="1. هدف البحث أو موضوعه العام (وصف مختصر)
+2. الإطار المرجعي أو الفرضيات (إن وجدت)"></textarea>
+
+
+    
+
+    <button type="submit">إرسال النموذج</button>
+  
+  
+  <a class="whatsapp-button" href="#" onclick="return sendWhatsAppMessage('academic')">إرسال عبر واتساب</a>
+  </form>
+
+  <!-- نموذج الخدمة غير البحثية -->
+  <form id="otherServiceForm" action="https://formspree.io/f/xjkraerk" method="POST" style="display:none;" enctype="multipart/form-data">
+    <h3>طلب خدمة غير بحثية</h3>
+
+    <label for="otherName">الاسم الكامل *</label>
+    <input type="text" id="otherName" name="الاسم الكامل" required>
+
+    <label for="otherPhone">رقم الهاتف *</label>
+    <input type="tel" id="otherPhone" name="رقم الهاتف" required>
+
+    <label for="otherDetails">شرح الخدمة المطلوبة *</label>
+    <textarea id="otherDetails" name="شرح الخدمة" rows="5" required></textarea>
+
+    <button type="submit">إرسال الطلب</button>
+    <a class="whatsapp-button" href="#" onclick="return sendWhatsAppMessage('other')">إرسال عبر واتساب</a>
+
+  </form>
+  
+
+  <!-- نموذج خدمة الترجمة -->
+  <form id="translationForm" action="https://formspree.io/f/xjkraerk" method="POST" style="display:none;" enctype="multipart/form-data">
+    <h3>طلب خدمة ترجمة</h3>
+
+    <label for="transName">الاسم الكامل *</label>
+    <input type="text" id="transName" name="الاسم الكامل" required>
+
+    <label for="transPhone">رقم الهاتف *</label>
+    <input type="tel" id="transPhone" name="رقم الهاتف" required>
+
+    <label>اختر نوع/أنواع الترجمة المطلوبة</label>
+    <div class="checkbox-row">
+      <label><input type="checkbox" name="نوع الترجمة المطلوبة[]" value="الترجمة القانونية"> الترجمة القانونية – العقود، الاتفاقيات، الأحكام، التوكيلات</label>
+      <label><input type="checkbox" name="نوع الترجمة المطلوبة[]" value="الترجمة الطبية"> الترجمة الطبية – التقارير الطبية، وصفات، نشرات</label>
+      <label><input type="checkbox" name="نوع الترجمة المطلوبة[]" value="الترجمة التقنية"> الترجمة التقنية – كتيبات، أدلة تشغيل، براءات</label>
+      <label><input type="checkbox" name="نوع الترجمة المطلوبة[]" value="الترجمة المالية والمصرفية"> الترجمة المالية والمصرفية – بيانات مالية، تقارير بنكية</label>
+      <label><input type="checkbox" name="نوع الترجمة المطلوبة[]" value="الترجمة الأكاديمية"> الترجمة الأكاديمية – رسائل ماجستير، مقالات، بحوث</label>
+      <label><input type="checkbox" name="نوع الترجمة المطلوبة[]" value="الترجمة الأدبية"> الترجمة الأدبية – الروايات، القصص، الشعر</label>
+      <label><input type="checkbox" name="نوع الترجمة المطلوبة[]" value="الترجمة الصحفية والإعلامية"> الترجمة الصحفية والإعلامية – الأخبار، المحتوى الرقمي</label>
+      <label><input type="checkbox" name="نوع الترجمة المطلوبة[]" value="الترجمة الدينية"> الترجمة الدينية – النصوص الشرعية والتفسيرية</label>
+      <label><input type="checkbox" name="نوع الترجمة المطلوبة[]" value="الترجمة المعتمدة"> الترجمة المعتمدة – شهادات، وثائق رسمية مع ختم</label>
+      <label><input type="checkbox" name="نوع الترجمة المطلوبة[]" value="الترجمة الفورية"> الترجمة الفورية – الاجتماعات، المؤتمرات</label>
+      <label><input type="checkbox" name="نوع الترجمة المطلوبة[]" value="الترجمة التسويقية والإبداعية"> الترجمة التسويقية والإبداعية – الإعلانات، الحملات الترويجية</label>
+      <label><input type="checkbox" name="نوع الترجمة المطلوبة[]" value="الترجمة السمعية البصرية"> الترجمة السمعية البصرية – فيديوهات، دبلجة، ترجمات نصية</label>
+      <label><input type="checkbox" name="نوع الترجمة المطلوبة[]" value="ترجمة المواقع والتطبيقات"> ترجمة المواقع والتطبيقات – تكييف ثقافي وتقني للويب والتطبيقات</label>
+    </div>
+
+    <label for="translationText">ضع النص المراد ترجمته أو قم بارسال الملف عبر واتساب عند تسليم النموذج</label>
+    <textarea id="translationText" name="النص للترجمة" rows="6"></textarea>
+
+    
+
+    <button type="submit">إرسال طلب الترجمة</button>
+    <a class="whatsapp-button" href="#" onclick="return sendWhatsAppMessage('translation')">إرسال عبر واتساب</a>
+
+  </form>
+</section>
+
+
+
+<section id="guidance" style="background-color: #f7f9fc; padding: 40px 20px;">
+  <h2 style="color: #004080;">جلسات إرشادية</h2>
+  <p style="font-size: 1.1em; line-height: 1.8;">
+    نوفر جلسات إرشاد فردية لفهم وتوجيه العمل البحثي أو المشروع الهندسي خطوة بخطوة.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>تواصل معنا</h2>
+  <p><strong>البريد الإلكتروني:</strong> <a href="mailto:alhabar82@gmail.com">alhabar82@gmail.com</a></p>
+  <p><strong>رقم التواصل:</strong> <a href="https://wa.me/962776346897" target="_blank">0776346897</a></p>
+</section>
+<footer>
+  <p>&copy; 2025 مكتبة الحبّار. جميع الحقوق محفوظة.</p>
+</footer>
+
+<script>
+  // عرض النموذج المناسب حسب نوع الخدمة المختار
+  const serviceRadios = document.querySelectorAll('input[name="serviceType"]');
+  serviceRadios.forEach(radio => {
+    radio.addEventListener('change', event => {
+      const value = event.target.value;
+      document.getElementById('academicForm').style.display = value === 'academic' ? 'block' : 'none';
+      document.getElementById('otherServiceForm').style.display = value === 'other' ? 'block' : 'none';
+      document.getElementById('translationForm').style.display = value === 'translation' ? 'block' : 'none';
+    });
+  });
+</script>
+<script>
+  function sendWhatsAppMessage(formType) {
+    let name = '', phone = '', message = '', lineBreak = "\n";
+
+    if (formType === 'academic') {
+      name = document.getElementById('fullName').value.trim();
+      phone = document.getElementById('phone').value.trim();
+      const title = document.getElementById('title').value.trim();
+      const university = document.getElementById('university').value.trim();
+      const studyLevel = document.getElementById('studyLevel').value;
+      const deadline = document.getElementById('deadline').value;
+      const pages = document.getElementById('pages').value;
+      const language = document.getElementById('language').value;
+      const extra = document.getElementById('extraDetails').value.trim();
+
+      if (!name || !phone || !title || !deadline) {
+        alert("يرجى تعبئة الاسم، الهاتف، عنوان البحث وتاريخ التسليم أولاً.");
+        return false;
+      }
+
+      message = `مرحبًا، أنا ${name}.${lineBreak}`;
+      message += `رقم هاتفي: ${phone}.${lineBreak}`;
+      message += `أرغب بالحصول على خدمة بحثية.${lineBreak}`;
+      message += `عنوان البحث: ${title}.${lineBreak}`;
+      message += `الجامعة/القسم: ${university}.${lineBreak}`;
+      message += `المرحلة الدراسية: ${studyLevel}.${lineBreak}`;
+      message += `عدد الصفحات: ${pages || "غير محدد"}.${lineBreak}`;
+      message += `لغة الكتابة: ${language}.${lineBreak}`;
+      message += `تاريخ التسليم: ${deadline}.${lineBreak}`;
+      if (extra) message += `تفاصيل إضافية: ${extra}.${lineBreak}`;
+    }
+
+    else if (formType === 'other') {
+      name = document.getElementById('otherName').value.trim();
+      phone = document.getElementById('otherPhone').value.trim();
+      const details = document.getElementById('otherDetails').value.trim();
+
+      if (!name || !phone || !details) {
+        alert("يرجى تعبئة الاسم، الهاتف وشرح الخدمة.");
+        return false;
+      }
+
+      message = `مرحبًا، أنا ${name}.${lineBreak}`;
+      message += `رقم هاتفي: ${phone}.${lineBreak}`;
+      message += `أطلب خدمة غير بحثية كالتالي:${lineBreak}${details}`;
+    }
+
+    else if (formType === 'translation') {
+      name = document.getElementById('transName').value.trim();
+      phone = document.getElementById('transPhone').value.trim();
+      const text = document.getElementById('translationText').value.trim();
+
+      if (!name || !phone) {
+        alert("يرجى تعبئة الاسم ورقم الهاتف.");
+        return false;
+      }
+
+      message = `مرحبًا، أنا ${name}.${lineBreak}`;
+      message += `رقم هاتفي: ${phone}.${lineBreak}`;
+      message += `أحتاج إلى خدمة ترجمة.${lineBreak}`;
+      if (text) message += `النص المراد ترجمته:${lineBreak}${text}`;
+    }
+
+    const encodedMessage = encodeURIComponent(message.replace(/\u00A0/g, ' '));
+    const whatsappNumber = '962776346897';
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    window.open(whatsappURL, '_blank');
+    return false;
+  }
+</script>
+
+
+
+</body>
+</html>
