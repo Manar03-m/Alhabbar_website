@@ -325,7 +325,7 @@
 <section id="contact">
   <h2>تواصل معنا</h2>
   <p><strong>البريد الإلكتروني:</strong> <a href="mailto:alhabar82@gmail.com">alhabar82@gmail.com</a></p>
-  <p><strong>رقم التواصل:</strong> <a href="https://wa.me/962776346897" target="_blank">0776346897</a></p>
+  <p><strong>رقم التواصل:</strong> <a href="https://wa.me/962799302349" target="_blank">0799302349</a></p>
 </section>
 <footer>
   <p>&copy; 2025 مكتبة الحبّار. جميع الحقوق محفوظة.</p>
@@ -407,7 +407,7 @@
     }
 
     const encodedMessage = encodeURIComponent(message.replace(/\u00A0/g, ' '));
-    const whatsappNumber = '962776346897';
+    const whatsappNumber = '962799302349';
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
     window.open(whatsappURL, '_blank');
     return false;
